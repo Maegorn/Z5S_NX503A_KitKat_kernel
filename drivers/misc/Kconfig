@@ -685,6 +685,12 @@ config ZTEMT_HAPTICS_DRV2605_DRIVE_ERM
 	help
 	  Say 'y' here to drive ERM rather than LRA using drv2605.
 
+config UID_CPUTIME
+	tristate "Per-UID cpu time statistics"
+	default n
+	help
+	  Per UID based cpu time statistics exported to /proc/uid_cputime
+
 endif
 
 source "drivers/misc/c2port/Kconfig"
